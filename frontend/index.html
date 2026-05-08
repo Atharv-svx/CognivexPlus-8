@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cognivex+</title>
+
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <!-- Markdown + Highlighting -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="logo">Cognivex+</div>
+    <button id="new-chat">+ New Chat</button>
+    <div id="chat-list"></div>
+  </div>
+
+  <!-- OVERLAY (mobile) -->
+  <div id="overlay" class="overlay"></div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- HEADER -->
+    <div class="header">
+      <button id="menu-btn" class="menu-btn">☰</button>
+
+      <div class="header-title">
+        <img src="assets/logo.png" class="logo-img" />
+        <span>Cognivex+</span>
+      </div>
+    </div>
+
+    <!-- CHAT BOX -->
+    <div id="chat-box" class="chat-box"></div>
+
+    <!-- INPUT -->
+    <div class="input-area">
+      <textarea id="chat-input" placeholder="Message Cognivex+..."></textarea>
+      <button id="send-btn">Send</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
